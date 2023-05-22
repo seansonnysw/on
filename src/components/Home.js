@@ -2,8 +2,11 @@
 import React, { useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import './Home.css';
 import '../fonts.css';
@@ -11,27 +14,22 @@ import '../fonts.css';
 
 const Home = () => {
     const phoneNumber = '010-4334-8329'; // Updated phone number
-    const [selectedDate, setSelectedDate] = useState(new Date('2023-07-08'));
+    const [selectedDate] = useState(new Date('2023-07-08'));
     const replacedImage = "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/up.png"
     const toggleImage = "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/down.png"
     const textToCopy = '국민은행 56210101412453';
     const textToCopy2 = '국민은행 56210201330778';
     const textToCopy3 = '신한은행 110494677408';
     const textToCopy4 = 'seungwoo-onyu.com';
-    const handleCopy = (text, result) => {
-      if (result) {
+    const handleCopy = () => {
         // Copy was successful
-        console.log('Content copied!');
-      } else {
-        // Copy failed
-        console.error('Copy failed!');
-      }
+        toast('계좌 번호가 복사되었습니다.');
     };
-  
+    const handleCopyLink = () => {
+      // Copy was successful
+      toast('링크가 복사되었습니다.');
+  };
 
-    const handleDateChange = (date) => {
-        setSelectedDate(date);
-    };    
     const getDday = () => {
         const today = new Date();
         const kstOffset = 9; // KST offset in hours
@@ -228,13 +226,13 @@ const Home = () => {
           </div>
         {isToggled && (
           <div className="content-division">
-              <CopyToClipboard text={textToCopy}>
+              <CopyToClipboard text={textToCopy} onCopy={handleCopy}>
               <div className="content-division">
                 <p>국민은행 56210101412453 손중식</p>
               </div>
             </CopyToClipboard>
    
-            <CopyToClipboard text={textToCopy2}>
+            <CopyToClipboard text={textToCopy2} onCopy={handleCopy}>
               <div className="content-division">
               <p>국민은행 56210201330778 손승우</p>
               </div>
@@ -254,7 +252,7 @@ const Home = () => {
         </div>
         {isToggled2 && (
           <div className="content-division">
-              <CopyToClipboard text={textToCopy3}>
+              <CopyToClipboard text={textToCopy3} onCopy={handleCopy}>
               <div className="content-division">
               <p>신한은행 110494677408 Park On Yu</p>
               </div>
@@ -275,8 +273,8 @@ const Home = () => {
 
       <div class="shareLink">
       <h3> * </h3>
-        <h3>링크 공유하기</h3>
-        <CopyToClipboard text={textToCopy4}>
+        <h3>링크 공유하기</h3> 
+        <CopyToClipboard text={textToCopy4} onCopy={handleCopyLink}>
               <div className="content-division">
               <img src="https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/share.jpeg" className="share" alt="link share" />
               </div>
