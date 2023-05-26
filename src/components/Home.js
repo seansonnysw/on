@@ -49,42 +49,60 @@ const Home = () => {
         setIsToggled2(!isToggled2);
       };
     
+    // const path1 = "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/"
+    // const path2 = "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/"
     const images = [
         {
-          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/1.jpeg",
-          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/1.jpeg",
+          original:"https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/1.jpg",
+          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/1.jpg",
         },
         {
-          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/2.jpeg",
-          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/2.jpeg",
+          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/2.jpg",
+          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/2.jpg",
         },
         {
-          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/4.jpeg",
-          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/4.jpeg",
+          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/3.jpg",
+          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/3.jpg",
         },
         {
-          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/5.jpeg",
-          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/5.jpeg",
+          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/4.jpg",
+          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/4.jpg",
         },
         {
-            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/6.jpeg",
-            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/6.jpeg",
+          original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/5.jpg",
+          thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/5.jpg",
+        },
+        {
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/6.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/6.jpg",
           },
           {
-            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/7.jpeg",
-            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/7.jpeg",
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/7.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/7.jpg",
           },
           {
-            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/8.jpeg",
-            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/8.jpeg",
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/8.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/8.jpg",
           },
           {
-            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/9.jpeg",
-            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/9.jpeg",
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/9.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/9.jpg",
           },
           {
-            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/10.jpeg",
-            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/10.jpeg",
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/10.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/10.jpg",
+          },
+          {
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/11.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/11.jpg",
+          },
+          {
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/12.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/12.jpg",
+          },
+          {
+            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/13.jpg",
+            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/13.jpg",
           },
       ];
     const handlePhoneClick = () => {
