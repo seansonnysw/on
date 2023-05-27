@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 import 'react-toastify/dist/ReactToastify.css';
-import {Toastify__toast} from './toastify.css'
+// import {Toastify__toast} from './toastify.css'
 
 
 import './Home.css';
