@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 import 'react-toastify/dist/ReactToastify.css';
+import {Toastify__toast} from './toastify.css'
 
 
 import './Home.css';
@@ -21,10 +22,23 @@ const Home = () => {
     const textToCopy2 = '국민은행 56210201330778';
     const textToCopy3 = '신한은행 110494677408';
     const textToCopy4 = 'seungwoo-onyu.com';
-    const handleCopy = () => {
+    // const handleClick = () => {
+    //   toast("Hello, world!", {
+    //     toastClassName: 'custom-toast',
+    // });
+
+    const handleCopy1 = () => {
         // Copy was successful
-        toast('계좌 번호가 복사되었습니다.');
+        toast('손중식님의 계좌 번호가 복사되었습니다.');
     };
+    const handleCopy2 = () => {
+      // Copy was successful
+      toast('손승우님의 계좌 번호가 복사되었습니다.');
+  };
+  const handleCopy3 = () => {
+    // Copy was successful
+    toast('박온유님의 계좌 번호가 복사되었습니다.');
+};
     const handleCopyLink = () => {
       // Copy was successful
       toast('링크가 복사되었습니다.');
@@ -87,10 +101,6 @@ const Home = () => {
           {
             original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/9.jpg",
             thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/9.jpg",
-          },
-          {
-            original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/10.jpg",
-            thumbnail: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/10.jpg",
           },
           {
             original: "https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/photo/11.jpg",
@@ -244,13 +254,13 @@ const Home = () => {
           </div>
         {isToggled && (
           <div className="content-division">
-              <CopyToClipboard text={textToCopy} onCopy={handleCopy}>
+              <CopyToClipboard text={textToCopy} onCopy={handleCopy1}>
               <div className="content-division">
                 <p>국민은행 56210101412453 손중식</p>
               </div>
             </CopyToClipboard>
    
-            <CopyToClipboard text={textToCopy2} onCopy={handleCopy}>
+            <CopyToClipboard text={textToCopy2} onCopy={handleCopy2}>
               <div className="content-division">
               <p>국민은행 56210201330778 손승우</p>
               </div>
@@ -270,7 +280,7 @@ const Home = () => {
         </div>
         {isToggled2 && (
           <div className="content-division">
-              <CopyToClipboard text={textToCopy3} onCopy={handleCopy}>
+              <CopyToClipboard text={textToCopy3} onCopy={handleCopy3}>
               <div className="content-division">
               <p>신한은행 110494677408 Park On Yu</p>
               </div>
