@@ -230,7 +230,7 @@ const Home = () => {
     <br/>
     <br/>
         <h3> * </h3>
-        <h3> 마음 전하실 곳 </h3>
+        <h3> 마음 전하실 곳 확인하기 </h3>
         <br/>
         <div className="account-division">
           <div className="top-container">
@@ -291,7 +291,7 @@ const Home = () => {
 
       <div class="shareLink">
       <h3> * </h3>
-        <h3>링크 공유하기</h3> 
+        <h3>청첩장 링크 복사하기</h3> 
         <CopyToClipboard text={textToCopy4} onCopy={handleCopyLink}>
               <div className="content-division">
               <img src="https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/share.jpeg" className="share" alt="link share" />
