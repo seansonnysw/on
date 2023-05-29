@@ -120,7 +120,7 @@ const Home = () => {
     };
   return (
     <div className="home-container">
-      <h3>Wedding Inviation</h3>
+      <h3>Wedding Invitation</h3>
       <h3>저희 결혼합니다</h3>
       <img src="https://matchu-users-profile.s3.ap-northeast-2.amazonaws.com/sw/5.jpeg" alt="Wedding Photo" />
       <div className="date-container">
@@ -189,7 +189,6 @@ const Home = () => {
         <div> 
             <h3>지하철</h3>
             1호선 시청역<br />
-            - 도보 10분<br />
             - 지하철 출구: 5번 출구<br />
             - 도보 10분<br />
             <br />
